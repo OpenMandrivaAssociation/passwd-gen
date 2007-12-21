@@ -9,6 +9,7 @@ Summary:	Password generator
 License:	GPL
 Group:		System/Base
 Source:		%{name}-%{version}.tar.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 passwd-gen is a very powerful password generator written in C to help
