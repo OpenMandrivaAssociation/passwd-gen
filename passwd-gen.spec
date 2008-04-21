@@ -1,6 +1,6 @@
 %define name	passwd-gen
 %define version	1.01a
-%define release	%mkrel 8
+%define release	%mkrel 9
 
 Name:		%{name}
 Version:	%{version}
@@ -9,6 +9,8 @@ Summary:	Password generator
 License:	GPL
 Group:		System/Base
 Source:		%{name}-%{version}.tar.bz2
+#gw: remove a compiler warning and convert the output message to UTF-8
+Patch: passwd-gen-1.01a-warning.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
@@ -20,6 +22,7 @@ than linux, please contact the author).
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %make CFLAGS="%{optflags}"
