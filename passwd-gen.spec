@@ -1,6 +1,6 @@
 %define name	passwd-gen
 %define version	1.01a
-%define release	%mkrel 10
+%define release	%mkrel 11
 
 Name:		%{name}
 Version:	%{version}
