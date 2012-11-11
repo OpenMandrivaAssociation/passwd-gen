@@ -1,0 +1,19 @@
+diff -p -up passwd-gen-1.01a/passwd-gen.c~ passwd-gen-1.01a/passwd-gen.c
+--- passwd-gen-1.01a/passwd-gen.c~	2001-02-02 23:50:00.000000000 +0100
++++ passwd-gen-1.01a/passwd-gen.c	2008-04-21 13:14:38.000000000 +0200
+@@ -1,5 +1,6 @@
+ #include <stdio.h>
+ #include <string.h>
++#include <time.h>
+ #include <sys/time.h>
+ #include <stdlib.h>
+ #include <getopt.h>
+@@ -151,7 +152,7 @@ int main(int argc, char *argv[])
+ 		sleep(1);
+ 	}	
+ 	puts("\n");
+-	printf("%s (c) Jean-François Lévesque, 2001\n",argv[0]);
++	printf("%s (c) Jean-FranÃ§ois LÃ©vesque, 2001\n",argv[0]);
+ 	return 0;
+ }
+ 
