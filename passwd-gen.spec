@@ -13,6 +13,7 @@ Source:		%{name}-%{version}.tar.bz2
 Patch: passwd-gen-1.01a-warning.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
+BuildRequires:	make
 %description
 passwd-gen is a very powerful password generator written in C to help
 you choose a good password. It contains many options to help you
